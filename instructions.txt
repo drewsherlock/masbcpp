@@ -1,0 +1,21 @@
+To build the Docker image:
+
+docker-compose -p project_name build
+
+To run:
+
+docker-compose -p project_name build
+
+To open Notebooks go to:
+
+http://localhost:9988/?token=<token>
+
+where <token> can be seen in the console when the Docker container is started (note: docker-compose is configured to map internal port 8888 to 9988 externally)
+
+for example:
+
+http://localhost:998888/?token=f034d41a84d86db8560bf340bef099a096bb86a33bea20b9
+
+the /home/analytics/notebooks directory in the Docker container is mapped onto your local notebooks folder so notebooks can be saved and kept between runs.
+
+masbcpp is built in /tmp/stuff/masbcpp in the Docker image copied from this directory. You should be able edit code locally and then build the Docker image again (see above) to recompile.

@@ -1,0 +1,13 @@
+version: '2.1'
+
+services:
+
+  masbcpp:
+    image: "shapespace/masbcpp"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9988:8888"
+    volumes:
+      - ./notebooks:/home/analytics/notebooks
