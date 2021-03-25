@@ -14,7 +14,7 @@ where <token> can be seen in the console when the Docker container is started (n
 
 for example:
 
-http://localhost:998888/?token=f034d41a84d86db8560bf340bef099a096bb86a33bea20b9
+http://localhost:9988/?token=f034d41a84d86db8560bf340bef099a096bb86a33bea20b9
 
 the /home/analytics/notebooks directory in the Docker container is mapped onto your local notebooks folder so notebooks can be saved and kept between runs.
 
